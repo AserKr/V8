@@ -77,3 +77,8 @@ textareaElement.addEventListener("input", (event) => {
   palindromeElement.textContent = palindromeFunction(text) ? "" : "ekki";
   reverseElement.textContent = reverseFunction(text);
 });
+
+
+formElement.addEventListener("reset", () => {
+  container.classList.add("hidden")
+})
